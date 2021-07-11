@@ -1,0 +1,29 @@
+{
+  "name": "covid-tweeter-tool",
+  "version": "1.0.0",
+  "description": "A Covid Tweeter Bot Tweeting Various Statistics Related to Vaccination and Daily Cases using my Covid Stats Module",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tks18/covid-tweeter-tool.git"
+  },
+  "keywords": [
+    "Tweet",
+    "Twitter",
+    "Vaccination",
+    "India"
+  ],
+  "author": "tks18 <hello@sudharshan.tk>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tks18/covid-tweeter-tool/issues"
+  },
+  "homepage": "https://github.com/tks18/covid-tweeter-tool#readme",
+  "dependencies": {
+    "vaccine-stats-plugin": "^0.3.0",
+    "yargs": "^17.0.1"
+  }
+}
