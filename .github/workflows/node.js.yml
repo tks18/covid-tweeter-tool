@@ -13,6 +13,11 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    env:
+      CKEY: ${{ secrets.CKEY }}
+      CSEC: ${{ secrets.CSEC }}
+      AT: ${{ secrets.AT }}
+      ATS: ${{ secrets.ATS }}
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js 14.x
@@ -21,4 +26,4 @@ jobs:
         node-version: 14.x
         cache: 'npm'
     - run: npm ci
-    - run: node app.js vaccine --ckey ${{ secrets.CKEY }} --csec ${{ secrets.CSEC }} --at ${{ secrets.AT }} --ats ${{ secrets.ATS }}
+    - run: node app.js vaccine --ckey ${{ env.CKEY }} --csec ${{ env.CSEC }} --at ${{ env.AT }} --ats ${{ env.ATS }}
