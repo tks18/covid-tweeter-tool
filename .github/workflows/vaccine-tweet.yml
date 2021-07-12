@@ -26,4 +26,4 @@ jobs:
         node-version: 14.x
         cache: 'npm'
     - run: npm ci
-    - run: node app.js vaccine --ckey $CKEY --csec $CSEC --at $AT --ats $ATS
+    - run: node app.js vaccine --ckey ${CKEY} --csec ${CSEC} --at ${AT} --ats ${ATS}
