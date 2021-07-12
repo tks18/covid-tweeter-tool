@@ -15,7 +15,6 @@ yargs(hideBin(process.argv)).command(
   (args) => {
     if (args.ckey && args.csec && args.at && args.ats) {
       const { ckey, csec, at, ats } = args;
-      console.log(ckey, csec, at, ats);
       const tConfig = twitterConfig(ckey, csec, at, ats);
       buildVaccinationTweets('overall')
         .then((tweets) => {
